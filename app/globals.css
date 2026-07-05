@@ -1,41 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-display: var(--font-dmserif), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --color-latte: #f5eee3;
+  --color-espresso: #3a2a20;
+  --color-caramel: #c07a3b;
+  --color-foam: #fffaf2;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-latte);
+  color: var(--color-espresso);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
-@keyframes float-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(15px); }
-}
-@keyframes float-alt {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
-.animate-float-slow {
-  animation: float-slow 8s ease-in-out infinite;
-}
-.animate-float-alt {
-  animation: float-alt 7s ease-in-out infinite;
-}
+h1, h2, h3 { font-family: var(--font-display); }
+
+/* Uap kopi */
+@keyframes steam { 0% { transform: translateY(0) scaleX(1); opacity: 0; } 30% { opacity: 0.6; } 100% { transform: translateY(-26px) scaleX(1.6); opacity: 0; } }
+.steam { animation: steam 2.6s ease-out infinite; }
+.steam2 { animation: steam 2.6s ease-out 0.9s infinite; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+.card { background: var(--color-foam); border: 1px solid rgba(58, 42, 32, 0.08); box-shadow: 0 10px 30px -14px rgba(58, 42, 32, 0.25); }
+
+:focus-visible { outline: 2px solid var(--color-caramel); outline-offset: 3px; border-radius: 12px; }
