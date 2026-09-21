@@ -4,10 +4,10 @@ import "./globals.css";
 const dmserif = DM_Serif_Display({ subsets: ["latin"], variable: "--font-dmserif", weight: "400" });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Kopi Vendra","description":"Kedai kopi rumahan","url":"https://vendra.pintuweb.com","areaServed":"ID"};
+const __jsonld = {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Kopi Vendra","description":"Kedai kopi rumahan","url":"https://linkinbio-vendra.vercel.app","areaServed":"ID"};
 
 export const metadata = {
-  metadataBase: new URL("https://vendra.pintuweb.com"),
+  metadataBase: new URL("https://linkinbio-vendra.vercel.app"),
   title: "Kopi Vendra — Pesan & Kunjungi",
   description: "Link in bio kedai Kopi Vendra: menu favorit, pesan lewat GoFood/WhatsApp, atau mampir langsung.",
   applicationName: "Kopi Vendra",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "Kopi Vendra" }],
   creator: "Kopi Vendra",
   publisher: "Kopi Vendra",
-  alternates: { canonical: "https://vendra.pintuweb.com" },
+  alternates: { canonical: "https://linkinbio-vendra.vercel.app" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://vendra.pintuweb.com",
+    url: "https://linkinbio-vendra.vercel.app",
     siteName: "Kopi Vendra",
     title: "Kopi Vendra — Pesan & Kunjungi",
     description: "Link in bio kedai Kopi Vendra: menu favorit, pesan lewat GoFood/WhatsApp, atau mampir langsung.",
