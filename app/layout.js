@@ -8,10 +8,10 @@ const __jsonld = {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","na
 
 export const metadata = {
   metadataBase: new URL("https://linkinbio-vendra.vercel.app"),
-  title: "Kopi Vendra — Pesan & Kunjungi",
-  description: "Link in bio kedai Kopi Vendra: menu favorit, pesan lewat GoFood/WhatsApp, atau mampir langsung.",
+  title: { default: "Kopi Vendra — Kedai Kopi Rumahan di Bandung", template: "%s — Kopi Vendra" },
+  description: "Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.",
   applicationName: "Kopi Vendra",
-  keywords: ["link in bio", "kedai kopi", "coffee shop", "pesan kopi", "umkm"],
+  keywords: ["kedai kopi bandung", "pre-order kopi", "menu kopi susu", "kopi untuk acara", "link in bio kedai kopi"],
   authors: [{ name: "Kopi Vendra" }],
   creator: "Kopi Vendra",
   publisher: "Kopi Vendra",
@@ -21,14 +21,14 @@ export const metadata = {
     locale: "id_ID",
     url: "https://linkinbio-vendra.vercel.app",
     siteName: "Kopi Vendra",
-    title: "Kopi Vendra — Pesan & Kunjungi",
-    description: "Link in bio kedai Kopi Vendra: menu favorit, pesan lewat GoFood/WhatsApp, atau mampir langsung.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Kopi Vendra — Pesan & Kunjungi" }],
+    title: "Kopi Vendra — Kedai Kopi Rumahan di Bandung",
+    description: "Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Kopi Vendra — Kedai Kopi Rumahan di Bandung" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kopi Vendra — Pesan & Kunjungi",
-    description: "Link in bio kedai Kopi Vendra: menu favorit, pesan lewat GoFood/WhatsApp, atau mampir langsung.",
+    title: "Kopi Vendra — Kedai Kopi Rumahan di Bandung",
+    description: "Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.",
     images: ["/og.jpg"],
   },
   robots: {

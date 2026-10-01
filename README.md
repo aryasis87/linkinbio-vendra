@@ -1,12 +1,12 @@
-# Kopi Vendra — Pesan & Kunjungi
+# Kopi Vendra — Kedai Kopi Rumahan di Bandung
 
-Link in bio kedai Kopi Vendra: menu favorit, pesan lewat GoFood/WhatsApp, atau mampir langsung.
+Tautan Kopi Vendra, kedai kopi rumahan di Bandung: status buka menurut jam WIB, menu lengkap, pre-order ambil di kedai dengan jam pilihan, dan kopi untuk acara.
 
 **Demo live:** https://linkinbio-vendra.vercel.app
 
 ![Tangkapan layar Kopi Vendra](public/og.jpg)
 
-> Template link-in-bio dengan persona fiktif.
+> Template link-in-bio dengan persona fiktif. Akun, klien, harga, dan jadwal hanya contoh; tautan utama menuju halaman dalam yang benar-benar ada, dan formulir tidak mengirim data.
 
 ## Konsep
 
@@ -14,7 +14,9 @@ Persona Kopi Vendra, kedai kopi. Tampil seperti etalase toko: status buka/tutup 
 
 ## Halaman
 
-`/`
+- `/` — papan nama kedai dengan uap kopi, status buka/tutup menurut WIB, empat menu favorit, tombol pesan
+- `/menu` — menu lengkap 14 item per kategori, lokasi, jam buka per hari
+- `/pesan` — pre-order dengan jumlah, jam ambil, total; permintaan kopi untuk acara
 
 ## Teknologi
 
